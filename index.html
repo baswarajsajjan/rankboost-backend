@@ -696,7 +696,7 @@ function hs(){
   const btn=document.querySelector('#fs .modal-btn');
   btn.textContent='Creating account...';btn.disabled=true;
 
-  fetch('http://localhost:5000/api/auth/register',{
+  fetch('https://rankboost-backend-1.onrender.com/api/auth/register',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({name,email,phone,password})
@@ -727,7 +727,7 @@ function hl(){
   const btn=document.querySelector('#fl .modal-btn');
   btn.textContent='Logging in...';btn.disabled=true;
 
-  fetch('http://localhost:5000/api/auth/login',{
+  fetch('https://rankboost-backend-1.onrender.com/api/auth/login',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({email,password})
